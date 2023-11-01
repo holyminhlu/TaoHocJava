@@ -11,13 +11,16 @@ public class doDuong {
 				double x,y,z, nghiem, nghiem1, nghiem2;
 				boolean ktra = false;
 				boolean ktra1= false;boolean ktra2= false;
-				System.out.print("Nhap vao so nguyen duong n: ");
+				System.out.print("\tTINH TONG TU 1 DEN N SO NGUYEN DUONG");
+				System.out.print("\nNhap vao so nguyen duong n: ");
 				n = input.nextInt();
 				for( int i=1; i<=n; i++){
 					tong += i;
 				}
 				System.out.print("Tong cac so tu 1 den n la: "+tong);
 				// tam giac
+				System.out.print("\n");
+				System.out.print("\n\tKIEM TRA CAC DIEU KIEN CUA TAM GIAC");
 				System.out.print("\n");
 				System.out.print("Nhap vao so thuc a: ");
 				a = input.nextFloat();
@@ -46,7 +49,8 @@ public class doDuong {
 }
 				System.out.print("\n");
 				// min max
-				System.out.print("Nhap vao so nguyen duong thu nhat: ");
+				System.out.print("\tTIM MAX TRONG 4 SO NGUYEN DUONG");
+				System.out.print("\nNhap vao so nguyen duong thu nhat: ");
 				a1 = input.nextInt();
 				while( a1<0 ){
 					System.out.print("Nhap sai !! Nhap lai so nguyen duong thu nhat: ");
@@ -82,11 +86,17 @@ public class doDuong {
 				System.out.print("So lon nhat trong 4 so vua nhap la: "+max);
 				//pt bac 2 in java
 				System.out.print("\n");
+				System.out.print("\n\tGIAI PHUONG TRINH BAC 2 ");
+				System.out.print("\n");
 				System.out.print("Nhap vao so thuc a: ");
 				x = input.nextDouble();
+				while( x==0 ){
+					System.out.print("Nhap sai a != 0. Nhap lai so nguyen duong thu nhat: ");
+					x = input.nextInt();
+				}
 				System.out.print("Nhap vao so thuc b: ");
 				y = input.nextDouble();
-				System.out.print("Nhap vao so thuc b: ");
+				System.out.print("Nhap vao so thuc c: ");
 				z = input.nextDouble();
 				double denta = (y*y) - (4*x*z);
 				if( denta < 0 ){
@@ -99,7 +109,7 @@ public class doDuong {
 				if( denta > 0 ){
 					nghiem1 = (((-y)+Math.sqrt(denta))/2*a);
 					nghiem2 = (((-y)-Math.sqrt(denta))/2*a);
-					System.out.print("Phuong trinh co hai nghiem phan biet: x1 = "+nghiem1+" va x2 = "+nghiem2);
+				System.out.print("Phuong trinh co hai nghiem phan biet: x1 = "+nghiem1+" va x2 = "+nghiem2);
 		}
 	}
 }
